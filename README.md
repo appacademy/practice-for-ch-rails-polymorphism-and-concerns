@@ -23,12 +23,13 @@ below--already has `Corgi` and `Cat` models. Here's the schema:
 First create a migration that implements the following schema:
 
 **Toys**
-| column name | data type | details |
-| ------------|-----------|----------------------- |
-| id          | integer   | not null, primary key |
-| name        | string    | not null, indexed, unique with respect to \[toyable_type, toyable_id] |
-| toyable_type| string    | not null, indexed with toyable_id |
-| toyable_id  | bigint    | not null |
+
+|  column name  |  data type  |  details               |
+| :------------ | :---------- | :--------------------- |
+|  id           |  integer    | not null, primary key  |
+|  name         |  string     | not null, indexed, unique with respect to \[toyable_type, toyable_id] |
+|  toyable_type |  string     | not null, indexed with toyable_id |
+|  toyable_id   |  bigint     | not null |
 
 Use the `references` column type with a `polymorphic: true` modifier to generate
 the last two columns:
