@@ -5,16 +5,18 @@ corgis and cats. The skeleton--available from the `Download Project` button
 below--already has `Corgi` and `Cat` models. Here's the schema:
 
 **Corgis**
-| column name | data type | details |
-| ------------|-----------|----------------------- |
-| id          | integer   | not null, primary key |
-| name        | string    | not null |
+
+|  column name |  data type  |  details                |
+| :----------- | :---------- | :---------------------- |
+|  id          |  integer    |  not null, primary key  |
+|  name        |  string     |  not null               |
 
 **Cats**
-| column name | data type | details |
-| ------------|-----------|----------------------- |
-| id          | integer   | not null, primary key |
-| name        | string    | not null |
+
+|  column name |  data type  |  details               |
+| :----------- | :---------- | :--------------------- |
+|  id          |  integer    |  not null, primary key |
+|  name        |  string     |  not null              |
 
 ## Phase 1: Create a `toys` table
 
